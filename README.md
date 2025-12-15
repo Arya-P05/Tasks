@@ -1,8 +1,8 @@
-# hi, this is freewrite
+# hi, this is tasks
 
-a simple, open-source mac app to freewrite.
+a simple, open-source mac app to help you get stuff done.
 
-download latest version [here](https://www.freewrite.io/)
+download latest version [coming soon...](https://www.aryap.me/)
 
 ![img](https://i.imgur.com/2ucbtff.gif)
 
@@ -13,5 +13,3 @@ or just wanna remix the app for yourself go for it.
 - open in xcode.
 - click build.
 - done -- you're up and running.
-
-make changes on a pr and i'll run on my end and then build a new version :).
