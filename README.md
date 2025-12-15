@@ -4,7 +4,7 @@ a simple, open-source mac app to help you get stuff done.
 
 download latest version [coming soon...](https://www.aryap.me/)
 
-![img](https://i.imgur.com/2ucbtff.gif)
+![Tasks](https://github.com/user-attachments/assets/24aa2f99-9a01-42ca-b92a-fa2bc33fd288)
 
 if you wanna make an addition + pr,
 or just wanna remix the app for yourself go for it.
