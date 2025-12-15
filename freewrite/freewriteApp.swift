@@ -10,7 +10,8 @@ import SwiftUI
 @main
 struct freewriteApp: App {
     @NSApplicationDelegateAdaptor(AppDelegate.self) var appDelegate
-    @AppStorage("colorScheme") private var colorSchemeString: String = "light"
+    // "system" means follow macOS appearance
+    @AppStorage("colorScheme") private var colorSchemeString: String = "system"
     
     init() {
         // Register Lato font
@@ -23,12 +24,23 @@ struct freewriteApp: App {
         WindowGroup {
             ContentView()
                 .toolbar(.hidden, for: .windowToolbar)
-                .preferredColorScheme(colorSchemeString == "dark" ? .dark : .light)
+                .preferredColorScheme(resolvedColorScheme)
         }
         .windowStyle(.hiddenTitleBar)
         .defaultSize(width: 1100, height: 600)
         .windowToolbarStyle(.unifiedCompact)
         .windowResizability(.contentSize)
+    }
+
+    private var resolvedColorScheme: ColorScheme? {
+        switch colorSchemeString {
+        case "dark":
+            return .dark
+        case "light":
+            return .light
+        default:
+            return nil // follow system
+        }
     }
 }
 
@@ -36,6 +48,16 @@ struct freewriteApp: App {
 class AppDelegate: NSObject, NSApplicationDelegate {
     func applicationDidFinishLaunching(_ notification: Notification) {
         if let window = NSApplication.shared.windows.first {
+            // Hide the “traffic light” window controls (close/minimize/zoom),
+            // so fullscreen doesn’t show the standard top-left chrome.
+            window.standardWindowButton(.closeButton)?.isHidden = true
+            window.standardWindowButton(.miniaturizeButton)?.isHidden = true
+            window.standardWindowButton(.zoomButton)?.isHidden = true
+
+            window.titleVisibility = .hidden
+            window.titlebarAppearsTransparent = true
+            window.isMovableByWindowBackground = true
+
             // Ensure window starts in windowed mode
             if window.styleMask.contains(.fullScreen) {
                 window.toggleFullScreen(nil)
