@@ -2,7 +2,7 @@
 
 a simple, open-source mac app to help you get stuff done.
 
-download latest version [coming soon...](https://www.aryap.me/)
+download [coming soon...](https://www.aryap.me/)
 
 ![Tasks](https://github.com/user-attachments/assets/24aa2f99-9a01-42ca-b92a-fa2bc33fd288)
 
