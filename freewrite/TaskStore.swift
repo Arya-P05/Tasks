@@ -156,7 +156,15 @@ final class TaskStore: ObservableObject {
 
     private func baseDirectory() -> URL {
         let docs = fileManager.urls(for: .documentDirectory, in: .userDomainMask)[0]
-        let dir = docs.appendingPathComponent("FreewriteTodo", isDirectory: true)
+        let newDir = docs.appendingPathComponent("TasksTodo", isDirectory: true)
+        let legacyDir = docs.appendingPathComponent("FreewriteTodo", isDirectory: true)
+
+        // Keep existing users' data by reusing legacy directory if it exists.
+        if fileManager.fileExists(atPath: legacyDir.path) && !fileManager.fileExists(atPath: newDir.path) {
+            return legacyDir
+        }
+
+        let dir = newDir
         if !fileManager.fileExists(atPath: dir.path) {
             try? fileManager.createDirectory(at: dir, withIntermediateDirectories: true)
         }
