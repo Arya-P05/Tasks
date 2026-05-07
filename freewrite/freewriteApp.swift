@@ -1,6 +1,6 @@
 //
-//  freewriteApp.swift
-//  freewrite
+//  TasksApp.swift
+//  Tasks
 //
 //  Created by thorfinn on 2/14/25.
 //
