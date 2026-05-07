@@ -1,6 +1,6 @@
 //
-//  freewriteTests.swift
-//  freewriteTests
+//  TasksTests.swift
+//  TasksTests
 //
 //  Created by thorfinn on 2/14/25.
 //
