@@ -1,6 +1,6 @@
 //
-//  freewriteUITests.swift
-//  freewriteUITests
+//  TasksUITests.swift
+//  TasksUITests
 //
 //  Created by thorfinn on 2/14/25.
 //
