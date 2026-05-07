@@ -11,5 +11,6 @@ or just wanna remix the app for yourself go for it.
 
 - clone repo.
 - open in xcode.
+- if prompted, set your own Apple Developer Team in Signing & Capabilities for the app target.
 - click build.
 - done -- you're up and running.
