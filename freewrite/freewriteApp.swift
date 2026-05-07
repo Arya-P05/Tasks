@@ -8,7 +8,7 @@
 import SwiftUI
 
 @main
-struct freewriteApp: App {
+struct TasksApp: App {
     @NSApplicationDelegateAdaptor(AppDelegate.self) var appDelegate
     // "system" means follow macOS appearance
     @AppStorage("colorScheme") private var colorSchemeString: String = "system"
