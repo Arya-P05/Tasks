@@ -29,7 +29,7 @@
 
 /* Begin PBXFileReference section */
 		2800F7402DA1CE9A008FE5F9 /* .gitignore */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
-		2857D4702D5F8A8000EE1012 /* freewrite.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; name = freewrite.app; path = Tasks.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		2857D4702D5F8A8000EE1012 /* Tasks.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Tasks.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2857D4812D5F8A8100EE1012 /* freewriteTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = freewriteTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		2857D48B2D5F8A8100EE1012 /* freewriteUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = freewriteUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -91,7 +91,7 @@
 		2857D4712D5F8A8000EE1012 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				2857D4702D5F8A8000EE1012 /* freewrite.app */,
+				2857D4702D5F8A8000EE1012 /* Tasks.app */,
 				2857D4812D5F8A8100EE1012 /* freewriteTests.xctest */,
 				2857D48B2D5F8A8100EE1012 /* freewriteUITests.xctest */,
 			);
@@ -120,7 +120,7 @@
 			packageProductDependencies = (
 			);
 			productName = freewrite;
-			productReference = 2857D4702D5F8A8000EE1012 /* freewrite.app */;
+			productReference = 2857D4702D5F8A8000EE1012 /* Tasks.app */;
 			productType = "com.apple.product-type.application";
 		};
 		2857D4802D5F8A8100EE1012 /* freewriteTests */ = {
@@ -402,7 +402,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"freewrite/Preview Content\"";
-				DEVELOPMENT_TEAM = "";
+				DEVELOPMENT_TEAM = 547SCMFGR9;
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
@@ -446,7 +446,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"freewrite/Preview Content\"";
-				DEVELOPMENT_TEAM = "";
+				DEVELOPMENT_TEAM = 547SCMFGR9;
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
